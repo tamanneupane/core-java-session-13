@@ -15,4 +15,13 @@ public class Product {
         Vendor Id
         Rating
      */
+
+    /*
+        Behaviour
+        -> Like
+        -> Share
+        -> Buy
+        -> Add to cart
+
+     */
 }

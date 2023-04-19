@@ -22,6 +22,15 @@ public class Laptop {
      */
 
     /* Behaviours
+        // App where detail is seen
+        -> like
+        -> Share
 
+        // Ecommerce Application
+        -> Add to cart
+        -> Buy
+        -> like
+        -> Share
+        -> increase / Decrease Quantity
      */
 }
