@@ -1,21 +1,34 @@
 package day2;
 
+import java.util.List;
+
 public class Product {
 
     /*
-        Product Id
-        SKU
-        Name of product
-        Price of Product
-        Discounted Price
-        Images
-        Size Available - [M,L,XL,XXL]
-        Number of stock Available - 2
-        Product Detail
-        Vendor Id
-        Rating
+        Product Id (long)
+        SKU (String)
+        Name of product (String)
+        Price of Product (double)
+        Discounted Price (double)
+        Images (List)
+        Size Available - [M,L,XL,XXL] => String
+        Number of stock Available - 2 (long)
+        Product Detail - String
+        Vendor Id (long)
+        Rating (Rating)
      */
 
+    long productId;
+    String sku;
+    String productName;
+    double price;
+    double discountedPrice;
+    List images;
+    String sizeAvailable;
+    long numberOfStock;
+    String productDetail;
+    long vendorId;
+    Rating rating;
     /*
         Behaviour
         -> Like

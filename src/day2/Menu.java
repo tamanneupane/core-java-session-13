@@ -1,14 +1,21 @@
 package day2;
 
 public class Menu {
-    /*
+    //UUID
 
-        Menu Id
-        Menu Name
-        Parent Menu Id
-        Is Leaf
-        Slug
+    /*
+        Menu Id (long)
+        Menu Name (String)
+        Parent Menu Id (long)
+        Is Leaf (boolean)
+        Slug (String)
      */
+
+    long menuId;
+    String menuName;
+    long parentMenuId;
+    boolean isLeaf;
+    String slug;
 }
 
 /*
