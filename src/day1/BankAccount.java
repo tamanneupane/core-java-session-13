@@ -4,7 +4,7 @@ public class BankAccount {
 
     /* States
         -> Account Number (String)
-        -> Account Type (String)
+        -> Account Type (Account Type)
         -> Account Holder Name (String)
         -> Routing Number (String)
         -> Signature Of Account Holder (Collection of byte) => Blob
@@ -21,7 +21,12 @@ public class BankAccount {
         -> Statements (List of something)
     */
 
-    /* Constructors
+     String accountNumber;
+     double accountBalance;
+     AccountType accountType;
+
+
+     /* Constructors
 
     */
 
