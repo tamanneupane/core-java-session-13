@@ -10,6 +10,8 @@ public class ShoppingApplication {
         womenFashion.parentMenuId = 0;
         womenFashion.isLeaf = false;
 
+
+
         Menu womenClothing = new Menu();
         womenClothing.menuId = 3;
         womenClothing.menuName = "Clothing";
@@ -29,5 +31,10 @@ public class ShoppingApplication {
         menFashion.menuName = "Men's Fashion";
         menFashion.parentMenuId = 0;
         menFashion.isLeaf = false;
+
+
+        String menuName = menFashion.menuName;
+        System.out.println(menuName);
+
     }
 }

@@ -1,6 +1,6 @@
 package day1;
 
-public class BankAccount {
+ class BankAccount {
 
     /* States
         -> Account Number (String)
@@ -38,4 +38,8 @@ public class BankAccount {
 
         Getters & Setters
     */
+
+     public void getInstance(){
+          BankAccount bankAccount = new BankAccount();
+     }
 }

@@ -34,7 +34,7 @@ public class MethodPractice {
     }
 
     // A function that doesnot return anything - void
-    public void addAndPrint(int a, int b){
+    void addAndPrint(int a, int b){
         int sum = a + b;
         System.out.println(sum);
     }
