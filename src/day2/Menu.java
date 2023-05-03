@@ -16,6 +16,7 @@ public class Menu {
     long parentMenuId;
     boolean isLeaf;
     String slug;
+
 }
 
 /*

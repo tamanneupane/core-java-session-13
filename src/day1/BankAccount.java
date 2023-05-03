@@ -1,6 +1,6 @@
 package day1;
 
- class BankAccount {
+ public class BankAccount {
 
     /* States
         -> Account Number (String)
@@ -21,9 +21,19 @@ package day1;
         -> Statements (List of something)
     */
 
-     String accountNumber;
-     double accountBalance;
-     AccountType accountType;
+     private String accountNumber;
+     private double accountBalance;
+     private AccountType accountType;
+     private String accountHolderName;
+     private String routingNumber;
+     private byte[] signatureOfAccountHolder;
+     private String phoneNumber;
+     private String address;
+     private String userName;
+     private String password;
+     private String ssn; // 123456789
+     private String hashedSSN; // #####789
+
 
 
      /* Constructors
@@ -36,10 +46,88 @@ package day1;
         Transfer Balance
         View Statement
 
-        Getters & Setters
+        Getters & Setters => In encapsulation to access the states we need getters and setters
     */
 
-     public void getInstance(){
+     public String getAccountNumber(){
+          return accountNumber;
+     }
+     public void setAccountNumber(String accNumber){
+          accountNumber = accNumber;
+     }
+
+     public void setSSN(String socialNumber){
+          ssn = socialNumber; // encryption(socialNumber) => akjshdaj21eqw
+          // hashedSSN = hashed(socialNumber) => #####6789
+     }
+
+     public String getHashedSSN(){
+          return hashedSSN;
+     }
+
+      public double getAccountBalance() {
+           return accountBalance;
+      }
+
+      public void setAccountBalance(double accountBalance) {
+           this.accountBalance = accountBalance;
+      }
+
+      public AccountType getAccountType() {
+           return accountType;
+      }
+
+      public void setAccountType(AccountType accountType) {
+           this.accountType = accountType;
+      }
+
+      public String getAccountHolderName() {
+           return accountHolderName;
+      }
+
+      public void setAccountHolderName(String accountHolderName) {
+           this.accountHolderName = accountHolderName;
+      }
+
+      public String getRoutingNumber() {
+           return routingNumber;
+      }
+
+      public void setRoutingNumber(String routingNumber) {
+           this.routingNumber = routingNumber;
+      }
+
+      public String getPhoneNumber() {
+           return phoneNumber;
+      }
+
+      public void setPhoneNumber(String phoneNumber) {
+           this.phoneNumber = phoneNumber;
+      }
+
+      public String getAddress() {
+           return address;
+      }
+
+      public void setAddress(String address) {
+           this.address = address;
+      }
+
+      public String getUserName() {
+           return userName;
+      }
+
+      public void setUserName(String userName) {
+           this.userName = userName;
+      }
+
+      public boolean transferBalance(BankAccount fromAccount, BankAccount toAccount, double amount){
+          // Code to transfer the balance
+           return true;
+      }
+
+      public void getInstance(){
           BankAccount bankAccount = new BankAccount();
+          bankAccount.ssn = "asdasd";
      }
 }
