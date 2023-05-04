@@ -48,6 +48,24 @@ public class DatePractice {
 
 //        2023-05-03 => Wed May 3 2023 // Date Formatting
 
+        LocalDateTime currentDateAndTime = LocalDateTime.now();
+        System.out.println(currentDateAndTime);
 
+        String birthDate = "1993/01/05";
+
+        // Convert String birthdate to date class
+
+        // JodaTime -> Library
+
+        Calendar currentCalendar = Calendar.getInstance();
+        System.out.println(currentCalendar);
+
+        Date currentCalendarDate = currentCalendar.getTime();
+        System.out.println(currentCalendarDate);
+
+        Calendar someSpecificCalendar = Calendar.getInstance();
+        someSpecificCalendar.set(2023,Calendar.APRIL, 23);
+
+        System.out.println(someSpecificCalendar);
     }
 }
